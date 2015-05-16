@@ -64,9 +64,7 @@ public class createEmail
 
 	public void composeMessage() 
 	{
-		body = JOptionPane.showInputDialog("What is the body of the message?");
-	
-		
+		body = JOptionPane.showInputDialog("What is the body of the message?");	
 	}
 
 	public void sendMessage() 
@@ -97,10 +95,7 @@ public class createEmail
 		}
 		catch(MessagingException ex)
 		{
-			
+			ex.printStackTrace();
 		}
-	
-		
 	}
-
 }
